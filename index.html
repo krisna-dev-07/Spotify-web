@@ -15,19 +15,23 @@
 
         <div class="left  ">
             <div class="Home bg-grey rounded m-1 p-1">
-                <div class="logo invert"><img src="logo.svg" alt="logo"></div>
+                <div class="logos flex invert">
+                    <img class="logo" src="images/logo.svg" alt="logo">
+                    <img class="cross" src="images/cross.svg" alt="">
+                </div>
+
                 <ul>
-                    <li><img class="invert " src="Home.svg" alt="Home">Home</li>
-                    <li><img class="invert" src="Search.svg" alt="Search">Search</li>
+                    <li><img class="invert " src="images/Home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="images/Search.svg" alt="Search">Search</li>
                 </ul>
             </div>
 
             <div class="Library bg-grey rounded m-1 p-1">
                 <div class="heading">
 
-                    <img class="invert" src="playlist.svg" alt="">
+                    <img class="invert" src="images/playlist.svg" alt="">
                     <h2>Your Library</h2>
-                    <img class="invert flex plus" src="plus.svg" alt="">
+                    <img class="invert flex plus" src="images/plus.svg" alt="">
 
                 </div>
                 <div class="songList">
@@ -53,7 +57,10 @@
         </div>
         <div class="right bg-grey rounded  ">
             <div class="header rounded bg-grey">
-                <div class="nav">
+                <div class="nav  flex items-center">
+
+                    <img "width=" 40px"class="hamburger invert" src="images/hamburger.svg" alt="">
+
                     <svg class="svg-none" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -89,13 +96,25 @@
                         <p>Artist</p>
                     </div>
                     <div class="playbar">
+
+                        <div class="abovebar">
+                            <div class="songinfo "></div>
+                            <div class="songbuttons">
+                                <img id="prev" src="images/play_prev.svg" alt="">
+                                <img id="play" src="images/play.svg" alt="">
+                                <img id="next" src="images/play_next.svg" alt="">
+                                
+                            </div>
+                            <div class="timevol">
+                                <div class="songtime"></div>
+                                <div class="sound"><img src="images/sound.svg" alt=""></div>
+                                <div class="volume">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
                         <div class="seekbar">
                             <div class="round"></div>
-                        </div>
-                        <div class="songbuttons">
-                            <img id="prev" src="play_prev.svg" alt="">
-                            <img id="play" src="play.svg" alt="">
-                            <img id="next" src="play_next.svg" alt="">
                         </div>
                     </div>
 
